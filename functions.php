@@ -25,3 +25,9 @@ add_action('wp_enqueue_scripts', 'visualdesign_theme');
 // Add new fields for Social links, Contacts
 require_once get_template_directory() . '/includes/social-links-customizations.php';
 require_once get_template_directory() . '/includes/contacts-customizations.php';
+
+// Translations
+$translations_file = get_template_directory() . '/translations.php';
+if (file_exists($translations_file)) {
+    include_once($translations_file);
+}
