@@ -1,3 +1,32 @@
+// TEMPORALLY HIDE WORDPRESS ADMIN BAR
+#wpadminbar {
+    display: none;
+}
+
 html {
     margin-top: 0 !important;
+}
+
+body {
+    color: $white;
+    background-color: $gray-900;
+    font-family: "Ubuntu", "Roboto", sans-serif;
+    letter-spacing: 2px;
+
+    main {
+        padding-bottom: 60px;
+    }
+
+    // Disable Scroll
+    &.disable-scroll {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        max-width: 1600px;
+    }
 }
