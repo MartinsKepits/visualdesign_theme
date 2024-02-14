@@ -19,6 +19,8 @@ function visualdesign_theme()
 
     // Navigation JS
     wp_enqueue_script('navbar_js', get_template_directory_uri() . '/assets/js/sections/navbar.js');
+    // Project Gallery JS
+    wp_enqueue_script('project_gallery_js', get_template_directory_uri() . '/assets/js/sections/project-gallery.js');
 }
 add_action('wp_enqueue_scripts', 'visualdesign_theme');
 

@@ -1,0 +1,79 @@
+// Hero
+.project-hero-wrapper {
+    height: 75vh;
+    margin-bottom: 50px;
+    position: relative;
+    overflow: hidden;
+
+    .project-content-wrapper {
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+    }
+
+    .row {
+        position: absolute;
+        width: 100%;
+        top: 0;
+        height: 75vh;
+
+        .col-sm-5 {
+            background: $main-one;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .project-hero-wrapper .project-content-wrapper {
+        padding-top: 40px;
+    }
+}
+
+@media (min-width: 576px) {
+    .project-hero-wrapper .project-content-wrapper {
+        height: 75vh;
+    }
+}
+
+@media (max-width: 560px) {
+    .project-hero-wrapper {
+        height: 50vh;
+
+        .project-content-wrapper {
+            display: none;
+        }
+
+        .row {
+            height: auto;
+
+            .col-sm-5 {
+                height: max-content;
+            }
+
+            .project-content {
+                padding: 30px 0;
+            }
+
+            .col-sm-7 {
+                height: 250px;
+            }
+        }
+    }
+}
+
+@media (min-width: 560px) {
+    .project-hero-wrapper .row .project-content {
+        display: none;
+    }
+}
+
+// Gallery
+.project-images .image {
+    position: relative;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+    }
+}
