@@ -13,9 +13,9 @@ function visualdesign_theme()
     wp_enqueue_script('slick_carousel_js', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js');
 
     // Viewer and JQuery Viewer
-    wp_enqueue_script('viewer_js', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.js');
-    wp_enqueue_style('viewer_css', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.css');
-    wp_enqueue_script('jquery_viewer_js', get_template_directory_uri() . '/node_modules/jquery-viewer/dist/jquery-viewer.js');
+    wp_enqueue_script('viewer_js', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.min.js');
+    wp_enqueue_style('viewer_css', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.min.css');
+    wp_enqueue_script('jquery_viewer_js', get_template_directory_uri() . '/node_modules/jquery-viewer/dist/jquery-viewer.min.js');
 
     // Navigation JS
     wp_enqueue_script('navbar_js', get_template_directory_uri() . '/assets/js/sections/navbar.js');
