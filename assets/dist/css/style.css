@@ -10390,7 +10390,8 @@ body {
   font-family: "Ubuntu", "Roboto", sans-serif;
   letter-spacing: 2px; }
   body main {
-    padding-bottom: 60px; }
+    padding-bottom: 60px;
+    min-height: calc(80vh - 75px); }
   body.disable-scroll {
     width: 100%;
     height: 100%;
@@ -10787,5 +10788,142 @@ body {
   overflow: hidden; }
   .project-images .image img {
     width: 100%; }
+
+.project-filters {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 25px; }
+  .project-filters .search-filter-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: left; }
+    .project-filters .search-filter-wrapper .search-filter {
+      position: relative;
+      width: 100%;
+      max-width: 400px; }
+      .project-filters .search-filter-wrapper .search-filter .project-search {
+        border: none;
+        border-radius: 100px;
+        padding: 6px 36px 6px 16px;
+        width: 100%;
+        font-weight: 500; }
+        .project-filters .search-filter-wrapper .search-filter .project-search:focus-visible {
+          outline: 2px solid #4f6962; }
+      .project-filters .search-filter-wrapper .search-filter i {
+        position: absolute;
+        color: #000;
+        right: 16px;
+        top: 9px;
+        font-size: 16px; }
+  .project-filters .tag-filters .tag-select {
+    position: relative;
+    display: inline-block;
+    min-width: 130px;
+    color: #000; }
+    .project-filters .tag-filters .tag-select .tag-selected {
+      background-color: #fff;
+      padding: 4px 14px;
+      border: 2px solid #fff;
+      font-weight: 500;
+      border-radius: 100px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none; }
+      .project-filters .tag-filters .tag-select .tag-selected i:before {
+        display: inline-block;
+        font-family: "Font Awesome 5 Free", sans-serif;
+        font-style: normal;
+        content: "\f078";
+        font-weight: 900; }
+    .project-filters .tag-filters .tag-select .select-options {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 100%;
+      z-index: 1;
+      border-radius: 6px;
+      margin-top: 5px; }
+      .project-filters .tag-filters .tag-select .select-options .select-button {
+        padding: 8px 16px;
+        font-weight: 500;
+        cursor: pointer;
+        user-select: none; }
+        .project-filters .tag-filters .tag-select .select-options .select-button:hover {
+          background-color: #adb5bd; }
+    .project-filters .tag-filters .tag-select.select-active .tag-selected {
+      border-color: #4f6962; }
+      .project-filters .tag-filters .tag-select.select-active .tag-selected i:before {
+        content: "\f077"; }
+
+.project {
+  text-decoration: none; }
+  .project .project-img-wrapper {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 8px;
+    overflow: hidden;
+    position: relative; }
+    .project .project-img-wrapper .project-img {
+      height: 250px;
+      transition: all 0.3s; }
+    .project .project-img-wrapper .project-img-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      text-transform: uppercase;
+      transition: all 0.3s;
+      opacity: 0; }
+  .project .project-title {
+    color: #fff;
+    margin: 0 0 0 4px;
+    font-size: 22px; }
+  .project .project-tags {
+    font-size: 13px;
+    color: #fff;
+    margin: 5px 0 0 4px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px; }
+    .project .project-tags .project-tag {
+      background-color: #4f6962;
+      padding: 2px 8px;
+      border-radius: 100px; }
+  .project:hover .project-img {
+    transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    /* IE 9 */
+    -moz-transform: scale(1.05);
+    /* Firefox */
+    -webkit-transform: scale(1.05);
+    /* Safari and Chrome */
+    -o-transform: scale(1.05);
+    /* Opera */ }
+  .project:hover .project-img-bg {
+    opacity: 1; }
+
+.no-projects-found-text {
+  display: none;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 25px; }
+  .no-projects-found-text.show-no-projects-found {
+    display: block; }
+
+@media (max-width: 575px) {
+  .project-filters,
+  .projects {
+    padding: 0; } }
 
 /*# sourceMappingURL=style.css.map */

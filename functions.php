@@ -19,8 +19,12 @@ function visualdesign_theme()
 
     // Navigation JS
     wp_enqueue_script('navbar_js', get_template_directory_uri() . '/assets/js/sections/navbar.js');
+
     // Project Gallery JS
     wp_enqueue_script('project_gallery_js', get_template_directory_uri() . '/assets/js/sections/project-gallery.js');
+
+    // Category
+    wp_enqueue_script('category_js', get_template_directory_uri() . '/assets/js/sections/category.js');
 }
 add_action('wp_enqueue_scripts', 'visualdesign_theme');
 
@@ -33,3 +37,6 @@ $translations_file = get_template_directory() . '/translations.php';
 if (file_exists($translations_file)) {
     include_once($translations_file);
 }
+
+// Add theme support for post featured image
+add_theme_support('post-thumbnails');
