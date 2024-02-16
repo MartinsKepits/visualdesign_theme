@@ -18,7 +18,7 @@ $project_page_fields = get_field('project_page_fields');
     <div class="project-hero-wrapper container-fluid">
         <div class="project-content-wrapper container">
             <div class="project-content col-sm-4">
-                <?php the_title('<h1>', '</h1>'); ?>
+                <?php the_title('<h1 class="project-title">', '</h1>'); ?>
                 <?php if ($project_page_fields['project_year']) : ?>
                     <span class="project-year"><?= $project_page_fields['project_year']; ?></span>
                 <?php endif; ?>
@@ -31,7 +31,7 @@ $project_page_fields = get_field('project_page_fields');
         <div class="row">
             <div class="col-sm-5">
                 <div class="project-content">
-                    <?php the_title('<h1>', '</h1>'); ?>
+                    <?php the_title('<h1 class="project-title">', '</h1>'); ?>
                     <?php if ($project_page_fields['project_year']) : ?>
                         <span class="project-year"><?= $project_page_fields['project_year'] ?></span>
                     <?php endif; ?>

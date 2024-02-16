@@ -39,6 +39,7 @@
 
                     &:hover > a {
                         background: $main-one;
+                        color: $black;
                         border-radius: 100px;
                     }
 
@@ -67,6 +68,7 @@
                             border-top: 3px solid $main-one;
                             padding: 9px 0;
                             min-width: 150px;
+                            border-radius: 6px;
 
                             &:before {
                                 display: inline-block;
@@ -121,10 +123,6 @@
                         padding: 0 10px;
                         transition: all 0.3s;
                         cursor: pointer;
-
-                        &:hover {
-                            color: $gray-400;
-                        }
                     }
 
                     .languages-options {
@@ -135,17 +133,26 @@
 
                         .languages-options-inner {
                             background-color: $white;
-                        }
+                            border-radius: 6px;
 
-                        a {
-                            position: relative;
-                            display: block;
-                            color: $black;
-                            padding: 12px;
-                            transition: 0.3s;
+                            a {
+                                position: relative;
+                                display: block;
+                                color: $black;
+                                padding: 12px;
+                                transition: 0.3s;
 
-                            &:hover {
-                                background: $gray-400;
+                                &:hover {
+                                    background: $gray-400;
+                                }
+
+                                &:first-of-type {
+                                    border-radius: 6px 6px 0 0;
+                                }
+
+                                &:last-of-type {
+                                    border-radius: 0 0 6px 6px;
+                                }
                             }
                         }
                     }

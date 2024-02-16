@@ -31,6 +31,12 @@
                 &:focus-visible {
                     outline: 2px solid $main-one;
                 }
+
+                &::placeholder {
+                    font-weight: 500;
+                    color: $gray-500;
+                    opacity: 1;
+                }
             }
 
             i {
@@ -89,6 +95,14 @@
 
                     &:hover {
                         background-color: $gray-500;
+                    }
+
+                    &:first-of-type {
+                        border-radius: 6px 6px 0 0;
+                    }
+
+                    &:last-of-type {
+                        border-radius: 0 0 6px 6px;
                     }
                 }
             }
@@ -153,6 +167,7 @@
 
         .project-tag {
             background-color: $main-one;
+            color: $black;
             padding: 2px 8px;
             border-radius: 100px;
         }

@@ -10386,7 +10386,7 @@ html {
 
 body {
   color: #fff;
-  background-color: #212529;
+  background-color: #231f20;
   font-family: "Artifakt Element", "Ubuntu", "Roboto", sans-serif;
   letter-spacing: 2px; }
   body main {
@@ -10430,7 +10430,8 @@ body {
         text-decoration: none;
         user-select: none; }
       .navbar .navbar-menu .menu-links .menu-item:hover > a {
-        background: #4f6962;
+        background: #e4d8ba;
+        color: #000;
         border-radius: 100px; }
       .navbar .navbar-menu .menu-links .menu-item.menu-item-has-children {
         position: relative;
@@ -10449,9 +10450,10 @@ body {
           list-style: none;
           background: #fff;
           top: 34px;
-          border-top: 3px solid #4f6962;
+          border-top: 3px solid #e4d8ba;
           padding: 9px 0;
-          min-width: 150px; }
+          min-width: 150px;
+          border-radius: 6px; }
           .navbar .navbar-menu .menu-links .menu-item.menu-item-has-children .sub-menu:before {
             display: inline-block;
             font-family: "Font Awesome 5 Free", sans-serif;
@@ -10491,23 +10493,26 @@ body {
           padding: 0 10px;
           transition: all 0.3s;
           cursor: pointer; }
-          .navbar .navbar-menu .menu-languages .languages-inner a:hover {
-            color: #ced4da; }
         .navbar .navbar-menu .menu-languages .languages-inner .languages-options {
           display: none;
           position: absolute;
           top: 100%;
           left: -2px; }
           .navbar .navbar-menu .menu-languages .languages-inner .languages-options .languages-options-inner {
-            background-color: #fff; }
-          .navbar .navbar-menu .menu-languages .languages-inner .languages-options a {
-            position: relative;
-            display: block;
-            color: #000;
-            padding: 12px;
-            transition: 0.3s; }
-            .navbar .navbar-menu .menu-languages .languages-inner .languages-options a:hover {
-              background: #ced4da; }
+            background-color: #fff;
+            border-radius: 6px; }
+            .navbar .navbar-menu .menu-languages .languages-inner .languages-options .languages-options-inner a {
+              position: relative;
+              display: block;
+              color: #000;
+              padding: 12px;
+              transition: 0.3s; }
+              .navbar .navbar-menu .menu-languages .languages-inner .languages-options .languages-options-inner a:hover {
+                background: #ced4da; }
+              .navbar .navbar-menu .menu-languages .languages-inner .languages-options .languages-options-inner a:first-of-type {
+                border-radius: 6px 6px 0 0; }
+              .navbar .navbar-menu .menu-languages .languages-inner .languages-options .languages-options-inner a:last-of-type {
+                border-radius: 0 0 6px 6px; }
       .navbar .navbar-menu .menu-languages:hover .languages-inner .languages-options {
         display: block; } }
 @media (max-width: 1024px) {
@@ -10570,7 +10575,7 @@ body {
           user-select: none;
           transition: all 0.3s; }
           .navbar .navbar-menu .menu-links .navbar-nav .menu-item a:hover {
-            color: #4f6962; }
+            color: #e4d8ba; }
         .navbar .navbar-menu .menu-links .navbar-nav .menu-item.menu-item-has-children > a {
           display: flex;
           justify-content: space-between; }
@@ -10633,7 +10638,7 @@ body {
             color: #fff;
             transition: all 0.3s; }
             .navbar .navbar-menu .navbar-menu-footer .menu-footer-bottom .navbar-menu-social-btns i:hover {
-              color: #4f6962; }
+              color: #e4d8ba; }
 
   .navbar.menu-active {
     position: static; }
@@ -10678,7 +10683,7 @@ body {
         margin-top: 6px;
         width: 42px;
         height: 3px;
-        background: #4f6962;
+        background: #e4d8ba;
         border-radius: 100px; }
     .footer .footer-col-1 .footer-contacts {
       color: #fff;
@@ -10712,7 +10717,7 @@ body {
         color: #fff;
         transition: all 0.3s; }
         .footer .footer-col-2 .footer-social-btns i:hover {
-          color: #4f6962; }
+          color: #e4d8ba; }
   .footer .footer-copyright {
     color: #fff;
     text-align: center;
@@ -10762,7 +10767,9 @@ body {
     top: 0;
     height: 75vh; }
     .project-hero-wrapper .row .col-sm-5 {
-      background: #4f6962; }
+      background: #e4d8ba; }
+  .project-hero-wrapper .project-title {
+    color: #000; }
 
 @media (max-width: 576px) {
   .project-hero-wrapper .project-content-wrapper {
@@ -10816,7 +10823,11 @@ body {
         width: 100%;
         font-weight: 500; }
         .project-filters .search-filter-wrapper .search-filter .project-search:focus-visible {
-          outline: 2px solid #4f6962; }
+          outline: 2px solid #e4d8ba; }
+        .project-filters .search-filter-wrapper .search-filter .project-search::placeholder {
+          font-weight: 500;
+          color: #adb5bd;
+          opacity: 1; }
       .project-filters .search-filter-wrapper .search-filter i {
         position: absolute;
         color: #000;
@@ -10860,8 +10871,12 @@ body {
         user-select: none; }
         .project-filters .tag-filters .tag-select .select-options .select-button:hover {
           background-color: #adb5bd; }
+        .project-filters .tag-filters .tag-select .select-options .select-button:first-of-type {
+          border-radius: 6px 6px 0 0; }
+        .project-filters .tag-filters .tag-select .select-options .select-button:last-of-type {
+          border-radius: 0 0 6px 6px; }
     .project-filters .tag-filters .tag-select.select-active .tag-selected {
-      border-color: #4f6962; }
+      border-color: #e4d8ba; }
       .project-filters .tag-filters .tag-select.select-active .tag-selected i:before {
         content: "\f077"; }
 
@@ -10902,7 +10917,8 @@ body {
     flex-wrap: wrap;
     gap: 7px; }
     .project .project-tags .project-tag {
-      background-color: #4f6962;
+      background-color: #e4d8ba;
+      color: #000;
       padding: 2px 8px;
       border-radius: 100px; }
   .project:hover .project-img {
@@ -10942,11 +10958,12 @@ body {
         position: absolute;
         bottom: -50px;
         width: 100%;
-        background: #4f6962;
+        background: #e4d8ba;
+        color: #000;
         text-decoration: none;
         text-transform: uppercase;
         font-size: 18px;
-        color: #fff;
+        font-weight: 700;
         text-align: center;
         padding: 0 25px;
         height: 50px;
@@ -10969,7 +10986,7 @@ body {
       .block-hero .slide h2 a, .block-hero .slide .h2 a {
         color: #fff;
         font-size: 20px;
-        font-weight: 700;
+        font-weight: 500;
         text-decoration: none; }
   .block-hero .slick-prev,
   .block-hero .slick-next {
