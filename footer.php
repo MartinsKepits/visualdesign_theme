@@ -67,6 +67,7 @@
         </div>
     </div>
     <div class="footer-copyright">
+        <!-- <a href="http://www.onlinewebfonts.com">Web Fonts</a> -->
         <p>© <?= date('Y'); ?> <?= pll__('Visual Design. All Rights Reserved.'); ?></p>
         <p><?= pll__('Website created by Mārtiņš Ķepīts'); ?></p>
     </div>

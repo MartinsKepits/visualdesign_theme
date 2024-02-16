@@ -10387,7 +10387,7 @@ html {
 body {
   color: #fff;
   background-color: #212529;
-  font-family: "Ubuntu", "Roboto", sans-serif;
+  font-family: "Artifakt Element", "Ubuntu", "Roboto", sans-serif;
   letter-spacing: 2px; }
   body main {
     padding-bottom: 60px;
@@ -10400,6 +10400,9 @@ body {
 @media (min-width: 1600px) {
   .container {
     max-width: 1600px; } }
+@font-face {
+  font-family: "Artifakt Element";
+  src: url("../fonts/Artifakt Element/Artifakt Element.woff2") format("woff2"), url("../fonts/Artifakt Element/Artifakt Element.woff") format("woff"); }
 .navbar {
   height: 75px;
   z-index: 3; }
