@@ -67,9 +67,17 @@
         </div>
     </div>
     <div class="footer-copyright">
-        <!-- <a href="http://www.onlinewebfonts.com">Web Fonts</a> -->
-        <p>© <?= date('Y'); ?> <?= pll__('Visual Design. All Rights Reserved.'); ?></p>
-        <p><?= pll__('Website created by Mārtiņš Ķepīts'); ?></p>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm col-copyright">
+                    <p>© <?= date('Y'); ?> <?= pll__('Visual Design. All Rights Reserved.'); ?></p>
+                </div>
+                <div class="col-sm col-created-by">
+                    <a href="https://martinskepits.lv/" target="_blank"><?= pll__('Built by'); ?> <span>Mārtiņš Ķepīts</span></a>
+                </div>
+            </div>
+        </div>
+        <a href="http://www.onlinewebfonts.com" class="onlinewebfonts">Web Fonts</a>
     </div>
 </footer>
 
