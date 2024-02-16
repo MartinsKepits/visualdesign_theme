@@ -11013,5 +11013,61 @@ body {
 @media (max-width: 798px) {
   .block-hero .slide h2, .block-hero .slide .h2 {
     font-size: 18px; } }
+.block-collection-boxes {
+  margin: 70px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5px; }
+  .block-collection-boxes .collection-box {
+    display: inline-block;
+    position: relative;
+    overflow: hidden; }
+    .block-collection-boxes .collection-box .collection-box-img {
+      width: 100%;
+      height: auto;
+      transition: transform 0.5s; }
+    .block-collection-boxes .collection-box .collection-box-title {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: #fff;
+      font-size: 22px;
+      font-weight: 700;
+      line-height: 1;
+      letter-spacing: 2.8px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      z-index: 1; }
+    .block-collection-boxes .collection-box:before {
+      opacity: 0;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      transition: opacity 0.5s; }
+    .block-collection-boxes .collection-box:hover .collection-box-img {
+      transform: scale(1.15);
+      -ms-transform: scale(1.15);
+      /* IE 9 */
+      -moz-transform: scale(1.15);
+      /* Firefox */
+      -webkit-transform: scale(1.15);
+      /* Safari and Chrome */
+      -o-transform: scale(1.15);
+      /* Opera */ }
+    .block-collection-boxes .collection-box:hover:before {
+      opacity: 1; }
+
+@media (max-width: 798px) {
+  .block-collection-boxes {
+    display: flex;
+    flex-direction: column; }
+    .block-collection-boxes .collection-box .collection-box-title {
+      font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */
