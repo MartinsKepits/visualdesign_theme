@@ -25,6 +25,9 @@ function visualdesign_theme()
 
     // Category
     wp_enqueue_script('category_js', get_template_directory_uri() . '/assets/js/sections/category.js');
+
+    // Home Hero
+    wp_enqueue_script('home_hero_js', get_template_directory_uri() . '/assets/js/sections/home-hero.js');
 }
 add_action('wp_enqueue_scripts', 'visualdesign_theme');
 
