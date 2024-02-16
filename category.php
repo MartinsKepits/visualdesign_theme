@@ -1,4 +1,6 @@
-<?php get_header(); ?>
+<?php get_header(); 
+$category = get_queried_object();
+?>
 
 <!-- Main Content Start -->
 <main role="main">
@@ -20,7 +22,6 @@
                         <div class="select-options">
                             <div class="select-button" data-filter="*"><?= pll__('All'); ?></div>
                             <?php
-                            $category = get_queried_object();
                             $tags = get_terms(array(
                                 'taxonomy' => 'post_tag',
                                 'object_ids' => get_objects_in_term($category->term_id, 'category'),
@@ -38,7 +39,7 @@
             </div>
         <?php endif; ?>
 
-        <div id="projects" class="projects row container g-3">
+        <div id="projects" class="projects row g-3">
             <?php if (have_posts()) :
                 while (have_posts()) : the_post(); ?>
                     <?php
@@ -54,7 +55,7 @@
                     $project_item_image_url = get_the_post_thumbnail_url();
                     ?>
 
-                    <a class="project col-sm-4 <?= $tag_classes; ?>" href="<?php the_permalink(); ?>">
+                    <a class="project col-xl-4 col-lg-4 col-md-6 col-sm-12 <?= $tag_classes; ?>" href="<?php the_permalink(); ?>">
                         <?php if ($project_item_image_url) : ?>
                             <div class="project-img-wrapper">
                                 <div class="project-img" style="background: url(<?= $project_item_image_url; ?>) no-repeat center top/cover"></div>

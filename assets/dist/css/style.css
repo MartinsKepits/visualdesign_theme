@@ -10789,6 +10789,9 @@ body {
   .project-images .image img {
     width: 100%; }
 
+.projects-wrapper {
+  margin-top: 30px; }
+
 .project-filters {
   display: flex;
   justify-content: left;
@@ -10921,10 +10924,6 @@ body {
   .no-projects-found-text.show-no-projects-found {
     display: block; }
 
-@media (max-width: 575px) {
-  .project-filters,
-  .projects {
-    padding: 0; } }
 .block-hero {
   overflow-x: hidden; }
   .block-hero .slide {
