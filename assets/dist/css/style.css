@@ -10816,6 +10816,8 @@ body {
   overflow: hidden; }
   .project-images .image img {
     width: 100%; }
+  .project-images .image:hover {
+    cursor: pointer; }
 
 .projects-wrapper {
   margin-top: 30px; }

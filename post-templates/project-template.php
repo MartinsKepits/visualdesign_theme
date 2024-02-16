@@ -47,64 +47,64 @@ $project_page_fields = get_field('project_page_fields');
     <div class="container">
         <div id="project-images" class="project-images row g-3">
             <?php if ($project_page_fields['project_img_one']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_one']['url']; ?>" alt="<?= $project_page_fields['project_img_one']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_one']['url']; ?>" alt="<?= $project_page_fields['project_img_one']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_two']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_two']['url']; ?>" alt="<?= $project_page_fields['project_img_two']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_two']['url']; ?>" alt="<?= $project_page_fields['project_img_two']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_three']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_three']['url']; ?>" alt="<?= $project_page_fields['project_img_three']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_three']['url']; ?>" alt="<?= $project_page_fields['project_img_three']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_four']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_four']['url']; ?>" alt="<?= $project_page_fields['project_img_four']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_four']['url']; ?>" alt="<?= $project_page_fields['project_img_four']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_five']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_five']['url']; ?>" alt="<?= $project_page_fields['project_img_five']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_five']['url']; ?>" alt="<?= $project_page_fields['project_img_five']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_six']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_six']['url']; ?>" alt="<?= $project_page_fields['project_img_six']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_six']['url']; ?>" alt="<?= $project_page_fields['project_img_six']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_seven']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_seven']['url']; ?>" alt="<?= $project_page_fields['project_img_seven']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_seven']['url']; ?>" alt="<?= $project_page_fields['project_img_seven']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eight']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_eight']['url']; ?>" alt="<?= $project_page_fields['project_img_eight']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eight']['url']; ?>" alt="<?= $project_page_fields['project_img_eight']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_nine']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_nine']['url']; ?>" alt="<?= $project_page_fields['project_img_nine']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_nine']['url']; ?>" alt="<?= $project_page_fields['project_img_nine']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_ten']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_ten']['url']; ?>" alt="<?= $project_page_fields['project_img_ten']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_ten']['url']; ?>" alt="<?= $project_page_fields['project_img_ten']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eleven']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_eleven']['url']; ?>" alt="<?= $project_page_fields['project_img_eleven']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eleven']['url']; ?>" alt="<?= $project_page_fields['project_img_eleven']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_twelve']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_twelve']['url']; ?>" alt="<?= $project_page_fields['project_img_twelve']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_twelve']['url']; ?>" alt="<?= $project_page_fields['project_img_twelve']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_thirteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_thirteen']['url']; ?>" alt="<?= $project_page_fields['project_img_thirteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_thirteen']['url']; ?>" alt="<?= $project_page_fields['project_img_thirteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_fourteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_fourteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fourteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_fourteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fourteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_fifteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_fifteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fifteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_fifteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fifteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_sixteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_sixteen']['url']; ?>" alt="<?= $project_page_fields['project_img_sixteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_sixteen']['url']; ?>" alt="<?= $project_page_fields['project_img_sixteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_seventeen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_seventeen']['url']; ?>" alt="<?= $project_page_fields['project_img_seventeen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_seventeen']['url']; ?>" alt="<?= $project_page_fields['project_img_seventeen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eighteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_eighteen']['url']; ?>" alt="<?= $project_page_fields['project_img_eighteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eighteen']['url']; ?>" alt="<?= $project_page_fields['project_img_eighteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_nineteen']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_nineteen']['url']; ?>" alt="<?= $project_page_fields['project_img_nineteen']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_nineteen']['url']; ?>" alt="<?= $project_page_fields['project_img_nineteen']['alt']; ?>"></div>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_twenty']) : ?>
-                <div class="image col-sm-4 px-2"><img src="<?= $project_page_fields['project_img_twenty']['url']; ?>" alt="<?= $project_page_fields['project_img_twenty']['alt']; ?>"></div>
+                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_twenty']['url']; ?>" alt="<?= $project_page_fields['project_img_twenty']['alt']; ?>"></div>
             <?php endif; ?>
         </div>
     </div>
