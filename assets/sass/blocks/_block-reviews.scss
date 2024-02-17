@@ -1,0 +1,116 @@
+.block-reviews {
+    .block-reviews-title {
+        font-size: 34px;
+        font-weight: 700;
+        margin-bottom: 25px;
+        width: max-content;
+
+        &:after {
+            display: block;
+            content: "";
+            margin-top: 6px;
+            width: 65%;
+            height: 3px;
+            background: $main-one;
+            border-radius: 100px;
+        }
+    }
+
+    .block-reviews-items {
+        position: relative;
+        padding: 0 28px;
+    }
+
+    .slick-prev.slick-arrow,
+    .slick-next.slick-arrow {
+        font-size: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+        padding: 0;
+        position: absolute;
+        top: 40%;
+
+        &::before {
+            display: inline-block;
+            font-family: "Font Awesome 5 Free", sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            color: $main-one;
+        }
+    }
+
+    .slick-prev.slick-arrow {
+        left: 8px;
+
+        &::before {
+            content: "\f104";
+        }
+    }
+
+    .slick-next.slick-arrow {
+        right: 8px;
+
+        &::before {
+            content: "\f105";
+        }
+    }
+
+    .review-wrapper {
+        background-color: $white;
+        border-radius: 6px;
+        color: $black;
+        margin: 0 10px;
+        padding: 25px;
+        position: relative;
+
+        .review-desc {
+            margin: 0;
+            padding-bottom: 75px;
+            font-size: 15px;
+        }
+
+        .review-info {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            bottom: 25px;
+            right: 25px;
+            width: max-content;
+            max-width: 200px;
+
+            .review-title {
+                font-size: 14px;
+                font-weight: 700;
+            }
+
+            .review-company {
+                font-size: 13px;
+                color: $grey-main;
+            }
+        }
+    }
+
+    .slick-dots {
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        margin: 25px 0 0 0;
+
+        li {
+            width: max-content;
+
+            button {
+                width: 15px;
+                height: 15px;
+                background-color: $main-one;
+                border-radius: 100%;
+                border: none;
+                outline: none;
+            }
+        }
+    }
+}

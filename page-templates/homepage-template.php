@@ -165,6 +165,8 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
             <?php endif; ?>
         </div>
     <?php endif; ?>
+
+    <?php get_template_part( 'blocks/block', 'reviews' ); ?>
 </main>
 <!-- Main Content End -->
 

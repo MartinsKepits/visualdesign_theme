@@ -28,6 +28,9 @@ function visualdesign_theme()
 
     // Home Hero
     wp_enqueue_script('home_hero_js', get_template_directory_uri() . '/assets/js/sections/home-hero.js');
+
+    // Block Reviews
+    wp_enqueue_script('block_reviews_js', get_template_directory_uri() . '/assets/js/blocks/block-reviews.js');
 }
 add_action('wp_enqueue_scripts', 'visualdesign_theme');
 

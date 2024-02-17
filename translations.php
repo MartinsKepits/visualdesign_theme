@@ -8,4 +8,5 @@ add_action('init', function () {
     pll_register_string('search', 'Search...');
     pll_register_string('all', 'All');
     pll_register_string('view_project', 'View Project');
+    pll_register_string('client_reviews', 'Client Reviews');
 });
