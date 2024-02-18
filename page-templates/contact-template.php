@@ -14,7 +14,7 @@ $page_contact_fields = get_field('page_contact_fields');
     <?php if ($page_contact_fields) : ?>
         <div class="contact-page-wrapper">
             <div class="row container-fluid">
-                <div class="col-sm-5" <?php if ($page_contact_fields['contact_img']) : ?> style="background: url(<?= $page_contact_fields['contact_img']; ?>) no-repeat center top/cover" <?php endif; ?>></div>
+                <div class="col-sm-5 contact-img-col" <?php if ($page_contact_fields['contact_img']) : ?> style="background: url(<?= $page_contact_fields['contact_img']; ?>) no-repeat center top/cover" <?php endif; ?>></div>
                 <div class="col-sm-7 contact-form-col">
                     <?php if ($page_contact_fields['contact_title']) : ?>
                         <h1><?= $page_contact_fields['contact_title'] ?></h1>
