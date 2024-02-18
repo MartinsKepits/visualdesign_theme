@@ -1,6 +1,13 @@
 "use strict";
 
 $(document).ready(function () {
+    const slickSliderBreakpoint = window.screen.width > 1920;
+    let variableWidthVal = false;
+
+    if (slickSliderBreakpoint) {
+        variableWidthVal = true;
+    }
+
     $(".block-hero").slick({
         centerMode: true,
         centerPadding: "60px",
@@ -10,6 +17,7 @@ $(document).ready(function () {
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 7000,
+        variableWidth: variableWidthVal,
         responsive: [
             {
                 breakpoint: 1024,
@@ -19,6 +27,10 @@ $(document).ready(function () {
             },
         ],
     });
+
+    if (slickSliderBreakpoint) {
+        $(".block-hero .slick-slide").width(1920);
+    }
 
     $(".slide-img").click((e) => {
         $(e.target).children(".slide-view-btn").toggleClass("active");
