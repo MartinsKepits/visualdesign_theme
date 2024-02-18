@@ -10776,6 +10776,7 @@ body {
     padding: 15px 12px; } }
 .project-hero-wrapper {
   height: 75vh;
+  max-width: 2560px;
   margin-bottom: 50px;
   position: relative;
   overflow: hidden; }
