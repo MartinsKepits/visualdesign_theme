@@ -1,8 +1,4 @@
 .contact-page-wrapper {
-    .contact-img-col {
-        min-height: 719px;
-    }
-
     .contact-form-col {
         padding: 15px 25px 15px 50px;
         max-width: 700px;
@@ -13,7 +9,13 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (min-width: 575px) {
+    .contact-img-col {
+        min-height: 719px;
+    }
+}
+
+@media (max-width: 575px) {
     .contact-page-wrapper {
         .container-fluid {
             padding-right: 0;
