@@ -29,7 +29,7 @@ $project_page_fields = get_field('project_page_fields');
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-5">
+            <div class="col-sm-5 order-2 order-sm-1">
                 <div class="project-content">
                     <?php the_title('<h1 class="project-title">', '</h1>'); ?>
                     <?php if ($project_page_fields['project_year']) : ?>
@@ -41,7 +41,7 @@ $project_page_fields = get_field('project_page_fields');
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="col-sm-7" <?php if ($project_page_fields['project_main_img']) : ?>style="background: url(<?= $project_page_fields['project_main_img'] ?>) no-repeat center top/cover" <?php endif; ?>></div>
+            <div class="col-sm-7 order-1 order-sm-2" <?php if ($project_page_fields['project_main_img']) : ?>style="background: url(<?= $project_page_fields['project_main_img'] ?>) no-repeat center top/cover" <?php endif; ?>></div>
         </div>
     </div>
     <div class="container">
