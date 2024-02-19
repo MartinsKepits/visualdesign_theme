@@ -75,7 +75,7 @@
                 <?php endif; ?>
                 <div class="menu-languages">
                     <div class="languages-inner">
-                        <a><span><?= pll_current_language('name'); ?></span></a>
+                        <div class="language-active"><?= pll_current_language('name'); ?></div>
                         <div class="languages-options">
                             <div class="languages-options-inner">
                                 <?php
@@ -91,7 +91,7 @@
                 <div class="navbar-menu-footer">
                     <div class="menu-footer-bottom">
                         <div class="footer-languages">
-                            <a class="current-lang"><span><?= pll_current_language('name'); ?></span></a>
+                            <div class="current-lang"><?= pll_current_language('name'); ?></div>
                             <?php
                             $languages = pll_the_languages(array('raw' => 1, 'hide_current' => 1));
                             foreach ($languages as $lang) :
