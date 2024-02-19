@@ -108,22 +108,22 @@
                         if ($facebook_link || $linkedin_link || $twitter_link || $instagram_link) : ?>
                             <div class="navbar-menu-social-btns">
                                 <?php if ($facebook_link) : ?>
-                                    <a href="<?= esc_url($facebook_link) ?>" target="_blank" class="social-btn facebook">
+                                    <a href="<?= esc_url($facebook_link) ?>" target="_blank" aria-label="Facebook" class="social-btn facebook">
                                         <i class="fa-brands fa-square-facebook"></i>
                                     </a>
                                 <?php endif; ?>
                                 <?php if ($linkedin_link) : ?>
-                                    <a href="<?= esc_url($linkedin_link) ?>" target="_blank" class="social-btn linkedin">
+                                    <a href="<?= esc_url($linkedin_link) ?>" target="_blank" aria-label="LinkedIn" class="social-btn linkedin">
                                         <i class="fa-brands fa-linkedin"></i>
                                     </a>
                                 <?php endif; ?>
                                 <?php if ($twitter_link) : ?>
-                                    <a href="<?= esc_url($twitter_link) ?>" target="_blank" class="social-btn twitter">
+                                    <a href="<?= esc_url($twitter_link) ?>" target="_blank" aria-label="Twitter" class="social-btn twitter">
                                         <i class="fa-brands fa-square-x-twitter"></i>
                                     </a>
                                 <?php endif; ?>
                                 <?php if ($instagram_link) : ?>
-                                    <a href="<?= esc_url($instagram_link) ?>" target="_blank" class="social-btn instagram">
+                                    <a href="<?= esc_url($instagram_link) ?>" target="_blank" aria-label="Instagram" class="social-btn instagram">
                                         <i class="fa-brands fa-instagram"></i>
                                     </a>
                                 <?php endif; ?>
