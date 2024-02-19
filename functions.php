@@ -4,7 +4,7 @@
 function visualdesign_theme()
 {
     // CSS
-    wp_enqueue_style('style', get_template_directory_uri() . '/assets/dist/css/style.css');
+    wp_enqueue_style('style', get_template_directory_uri() . '/assets/dist/css/style.min.css');
 
     // JQUERY v3.7.1
     wp_enqueue_script('jquery_js', get_template_directory_uri() . '/assets/js/vendor/jquery/jquery-3.7.1.min.js');
