@@ -17,20 +17,8 @@ function visualdesign_theme()
     wp_enqueue_style('viewer_css', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.min.css');
     wp_enqueue_script('jquery_viewer_js', get_template_directory_uri() . '/node_modules/jquery-viewer/dist/jquery-viewer.min.js');
 
-    // Navigation JS
-    wp_enqueue_script('navbar_js', get_template_directory_uri() . '/assets/js/sections/navbar.js');
-
-    // Project Gallery JS
-    wp_enqueue_script('project_gallery_js', get_template_directory_uri() . '/assets/js/sections/project-gallery.js');
-
-    // Category
-    wp_enqueue_script('category_js', get_template_directory_uri() . '/assets/js/sections/category.js');
-
-    // Home Hero
-    wp_enqueue_script('home_hero_js', get_template_directory_uri() . '/assets/js/sections/home-hero.js');
-
-    // Block Reviews
-    wp_enqueue_script('block_reviews_js', get_template_directory_uri() . '/assets/js/blocks/block-reviews.js');
+    // All js from assets/js files
+    wp_enqueue_script('main_js', get_template_directory_uri() . '/assets/js/main.min.js');
 }
 add_action('wp_enqueue_scripts', 'visualdesign_theme');
 
