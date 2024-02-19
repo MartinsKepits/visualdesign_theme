@@ -1,5 +1,6 @@
 .block-hero {
     overflow-x: hidden;
+    margin-bottom: 70px;
 
     .slide {
         height: calc(100vh - 75px);
@@ -102,6 +103,8 @@
 
 @media (max-width: 1024px) {
     .block-hero {
+        display: none;
+
         .slick-list {
             margin: 0 -9px;
         }
