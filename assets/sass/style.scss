@@ -4,9 +4,10 @@
 @import "../../fonts/fontawesome-free-6.4.2-web/css/all.min.css"; // Font Awesome icons
 @import "https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Ubuntu:wght@300;400;500;700&display=swap"; // Google fonts
 @import "../../node_modules/slick-carousel/slick/slick";
+@import url("https://db.onlinewebfonts.com/c/bf1ead8093f8b529c7581c1cefa75273?family=Artifakt+Element");
 
 // Main CSS
-@import "variables/variables", "base/base", "fonts/fonts";
+@import "variables/variables", "base/base";
 
 // Sections
 @import "sections/header", "sections/footer", "sections/contact",
