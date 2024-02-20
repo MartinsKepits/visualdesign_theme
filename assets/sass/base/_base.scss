@@ -18,6 +18,10 @@ body {
         min-height: calc(80vh - 75px);
     }
 
+    h1 {
+        margin-bottom: 10px;
+    }
+
     // Disable Scroll
     &.disable-scroll {
         width: 100%;

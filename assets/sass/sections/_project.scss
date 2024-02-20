@@ -2,7 +2,6 @@
 .project-hero-wrapper {
     height: 75vh;
     max-width: 2560px;
-    margin-bottom: 50px;
     position: relative;
     overflow: hidden;
 
@@ -23,16 +22,20 @@
 }
 
 // Gallery
-.project-images .image {
-    position: relative;
-    overflow: hidden;
+.project-images {
+    margin-top: 60px;
 
-    img {
-        width: 100%;
-    }
+    .image {
+        position: relative;
+        overflow: hidden;
 
-    &:hover {
-        cursor: pointer;
+        img {
+            width: 100%;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

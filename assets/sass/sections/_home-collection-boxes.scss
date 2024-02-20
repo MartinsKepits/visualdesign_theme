@@ -1,5 +1,4 @@
 .block-collection-boxes {
-    margin: 0 0 70px 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 5px;
@@ -56,12 +55,6 @@
                 opacity: 1;
             }
         }
-    }
-}
-
-@media (max-width: 1024px) {
-    .block-collection-boxes {
-        margin-top: 25px;
     }
 }
 
