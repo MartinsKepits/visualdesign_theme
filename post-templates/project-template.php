@@ -15,7 +15,7 @@ $current_lang = pll_current_language('slug');
 $project_page_fields = get_field('project_page_fields');
 ?>
 <main role="main">
-    <div class="project-hero-wrapper container-fluid">
+    <div class="project-hero-wrapper container-fluid animate__animated animate__fadeIn">
         <div class="project-content-wrapper container">
             <div class="project-content col-sm-4">
                 <?php the_title('<h1 class="project-title">', '</h1>'); ?>
@@ -45,7 +45,7 @@ $project_page_fields = get_field('project_page_fields');
         </div>
     </div>
     <div class="container">
-        <div id="project-images" class="project-images row g-3">
+        <div id="project-images" class="project-images row g-3 animate__animated animate__fadeIn">
             <?php if ($project_page_fields['project_img_one']) : ?>
                 <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_one']['url']; ?>" alt="<?= $project_page_fields['project_img_one']['alt']; ?>"></div>
             <?php endif; ?>

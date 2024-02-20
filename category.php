@@ -4,7 +4,7 @@ $category = get_queried_object();
 
 <!-- Main Content Start -->
 <main role="main">
-    <div class="projects-wrapper container">
+    <div class="projects-wrapper container animate__animated animate__fadeIn">
         <?php if (have_posts()) : ?>
             <div id="project-filters" class="project-filters container">
                 <div class="search-filter-wrapper">
