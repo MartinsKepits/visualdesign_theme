@@ -17,6 +17,9 @@ function visualdesign_theme()
     wp_enqueue_style('viewer_css', get_template_directory_uri() . '/node_modules/viewerjs/dist/viewer.min.css');
     wp_enqueue_script('jquery_viewer_js', get_template_directory_uri() . '/node_modules/jquery-viewer/dist/jquery-viewer.min.js');
 
+    // Animate.css
+    wp_enqueue_style('animatecss_css', get_template_directory_uri() . '/node_modules/animate.css/animate.min.css');
+
     // All js from assets/js files
     wp_enqueue_script('main_js', get_template_directory_uri() . '/assets/js/main.min.js');
 }
