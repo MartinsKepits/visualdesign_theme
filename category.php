@@ -64,7 +64,7 @@ $category = get_queried_object();
                                 </div>
                             </div>
                             <div class="project-info">
-                                <h4 class="project-title"><?= the_title(); ?></h4>
+                                <div class="project-title"><?= the_title(); ?></div>
                                 <div class="project-tags">
                                     <?php if ($tags) : ?>
                                         <?php foreach ($tags as $tag) : ?>

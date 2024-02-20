@@ -17,7 +17,7 @@
                 $mail_info = get_theme_mod('mail_info', '');
 
                 if ($phone_number || $mail_info) : ?>
-                    <h2 class="footer-heading"><?= pll__('Contacts'); ?></h2>
+                    <div class="footer-heading"><?= pll__('Contacts'); ?></div>
                     <ul class="footer-contacts">
                         <?php if ($phone_number) : ?>
                             <li class="contacts-item contact-phone">

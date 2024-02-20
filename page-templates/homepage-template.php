@@ -29,7 +29,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
-                        <h2><a href="<?= $s_link; ?>"><?= $s_title; ?></a></h2>
+                        <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -48,7 +48,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
-                        <h2><a href="<?= $s_link; ?>"><?= $s_title; ?></a></h2>
+                        <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -67,7 +67,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
-                        <h2><a href="<?= $s_link; ?>"><?= $s_title; ?></a></h2>
+                        <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -86,7 +86,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
-                        <h2><a href="<?= $s_link; ?>"><?= $s_title; ?></a></h2>
+                        <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>
@@ -105,7 +105,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
-                        <h2><a href="<?= $s_link; ?>"><?= $s_title; ?></a></h2>
+                        <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
                     <?php endif; ?>
                 </div>
             <?php endif; ?>

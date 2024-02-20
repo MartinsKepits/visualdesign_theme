@@ -5,7 +5,7 @@ $block_reviews_fields = get_field('block_reviews_fields');
 <?php if ($block_reviews_fields['show_block_reviews']) : ?>
     <div class="block-reviews">
         <div class="container">
-            <h4 class="block-reviews-title"><?= pll__('Client Reviews'); ?></h4>
+            <div class="block-reviews-title"><?= pll__('Client Reviews'); ?></div>
         </div>
         <div id="block-reviews-items" class="block-reviews-items container">
             <?php if (
