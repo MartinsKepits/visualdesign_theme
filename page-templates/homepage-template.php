@@ -13,7 +13,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
 <!-- Main Content Start -->
 <main role="main">
     <?php if ($homepage_hero_fields && $homepage_hero_fields['show_home_hero']) : ?>
-        <div class="block-hero">
+        <div class="block-hero animate__animated animate__fadeIn">
             <?php
             if (
                 $homepage_hero_fields['home_hero_slide_one']['home_hero_img'] &&
@@ -118,7 +118,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_img']
             ) : ?>
-                <a class="collection-box" href="<?= $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_link']['url']; ?>">
+                <a class="collection-box " href="<?= $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_link']['url']; ?>">
                     <img class="collection-box-img" src="<?= $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_img']['url']; ?>" alt="<?= $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_img']['alt']; ?>" />
                     <h2 class="collection-box-title"><?= $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_link']['title']; ?></h2>
                 </a>
@@ -128,7 +128,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_img']
             ) : ?>
-                <a class="collection-box" href="<?= $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_link']['url']; ?>">
+                <a class="collection-box " href="<?= $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_link']['url']; ?>">
                     <img class="collection-box-img" src="<?= $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_img']['url']; ?>" alt="<?= $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_img']['alt']; ?>" />
                     <h2 class="collection-box-title"><?= $homepage_collection_boxes_fields['home_collection_page_two']['collection_page_link']['title']; ?></h2>
                 </a>
@@ -138,7 +138,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_img']
             ) : ?>
-                <a class="collection-box" href="<?= $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_link']['url']; ?>">
+                <a class="collection-box " href="<?= $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_link']['url']; ?>">
                     <img class="collection-box-img" src="<?= $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_img']['url']; ?>" alt="<?= $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_img']['alt']; ?>" />
                     <h2 class="collection-box-title"><?= $homepage_collection_boxes_fields['home_collection_page_three']['collection_page_link']['title']; ?></h2>
                 </a>
@@ -148,7 +148,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_img']
             ) : ?>
-                <a class="collection-box" href="<?= $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_link']['url']; ?>">
+                <a class="collection-box " href="<?= $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_link']['url']; ?>">
                     <img class="collection-box-img" src="<?= $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_img']['url']; ?>" alt="<?= $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_img']['alt']; ?>" />
                     <h2 class="collection-box-title"><?= $homepage_collection_boxes_fields['home_collection_page_four']['collection_page_link']['title']; ?></h2>
                 </a>
@@ -158,7 +158,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_img']
             ) : ?>
-                <a class="collection-box" href="<?= $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_link']['url']; ?>">
+                <a class="collection-box " href="<?= $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_link']['url']; ?>">
                     <img class="collection-box-img" src="<?= $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_img']['url']; ?>" alt="<?= $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_img']['alt']; ?>" />
                     <h2 class="collection-box-title"><?= $homepage_collection_boxes_fields['home_collection_page_five']['collection_page_link']['title']; ?></h2>
                 </a>
