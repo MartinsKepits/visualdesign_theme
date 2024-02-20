@@ -23,7 +23,7 @@
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-logo" href="<?= esc_url(home_url('/')); ?>" aria-label="Visual Design Logo">
-                <img src="<?= get_template_directory_uri(); ?>/assets/images/logo_2024.webp" alt="Visual Design Logo" />
+                <img src="<?= get_template_directory_uri(); ?>/assets/images/logo_2024.svg" alt="Visual Design Logo" />
             </a>
 
             <div class="navbar-toggle">
@@ -35,7 +35,7 @@
             <div class="navbar-menu">
                 <div class="navbar-menu-header">
                     <a class="navbar-menu-logo" href="<?= esc_url(home_url('/')); ?>" aria-label="Visual Design Logo">
-                        <img src="<?= get_template_directory_uri(); ?>/assets/images/logo_2024.webp" alt="Visual Design Logo" />
+                        <img src="<?= get_template_directory_uri(); ?>/assets/images/logo_2024.svg" alt="Visual Design Logo" />
                     </a>
 
                     <div class="navbar-toggle">
