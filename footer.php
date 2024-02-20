@@ -77,7 +77,6 @@
                 </div>
             </div>
         </div>
-        <a href="http://www.onlinewebfonts.com" class="onlinewebfonts">Web Fonts</a>
     </div>
 </footer>
 

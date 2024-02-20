@@ -148,6 +148,11 @@
             text-transform: uppercase;
             transition: all 0.3s;
             opacity: 0;
+
+            span {
+                font-size: 15px;
+                font-weight: 700;
+            }
         }
     }
 
@@ -155,10 +160,12 @@
         color: $white;
         margin: 0 0 0 4px;
         font-size: 22px;
+        font-weight: 700;
     }
 
     .project-tags {
-        font-size: 13px;
+        font-size: 14px;
+        font-weight: 700;
         color: $white;
         margin: 5px 0 0 4px;
         display: flex;

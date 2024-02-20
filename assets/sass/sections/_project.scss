@@ -18,6 +18,18 @@
 
     .project-title {
         color: $black;
+        font-weight: 700;
+    }
+
+    .project-year {
+        font-size: 15px;
+        font-weight: 700;
+    }
+
+    .project-desc {
+        font-family: "Ubuntu", "Nunito", sans-serif;
+        font-size: 15px;
+        font-weight: 500;
     }
 }
 
