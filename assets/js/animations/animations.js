@@ -1,12 +1,14 @@
 "use strict";
 
 $(document).ready(function () {
+    const screenWidth = $(window).width();
+
     // Function to check if element is in viewport
     function isInViewport(element) {
-        var elementTop = element.offset().top;
-        var elementHeight = element.outerHeight();
-        var scrollTop = $(window).scrollTop();
-        var windowHeight = $(window).height();
+        let elementTop = element.offset().top;
+        let elementHeight = element.outerHeight();
+        let scrollTop = $(window).scrollTop();
+        let windowHeight = $(window).height();
 
         return (
             elementTop + elementHeight > scrollTop &&
@@ -25,16 +27,13 @@ $(document).ready(function () {
     }
 
     // Initial animation for small screens
-    if ($(window).width() < 575) {
+    if (screenWidth < 1025) {
         $(".collection-box").addClass("animate__animated animate__fadeIn");
-    } else {
-        // Trigger animation on page load
-        addAnimationIfVisible();
     }
 
     // Attach scroll event listener to the window
     $(window).on("scroll", function () {
-        if ($(window).width() > 575) {
+        if (screenWidth > 1024) {
             addAnimationIfVisible();
         }
     });
