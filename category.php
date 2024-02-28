@@ -58,7 +58,7 @@ $category = get_queried_object();
                     <a class="project col-xl-4 col-lg-4 col-md-6 col-sm-12 <?= $tag_classes; ?>" href="<?php the_permalink(); ?>">
                         <?php if ($project_item_image_url) : ?>
                             <div class="project-img-wrapper">
-                                <div class="project-img" style="background: url(<?= $project_item_image_url; ?>) no-repeat center top/cover"></div>
+                                <img class="project-img" src="<?= $project_item_image_url; ?>"/>
                                 <div class="project-img-bg">
                                     <span><?= pll__('View Project'); ?></span>
                                 </div>
