@@ -160,17 +160,10 @@
                                 font-weight: 700;
                                 text-transform: uppercase;
                                 transition: all 0.3s;
+                                border-radius: 6px;
 
                                 &:hover {
                                     background: $gray-400;
-                                }
-
-                                &:first-of-type {
-                                    border-radius: 6px 6px 0 0;
-                                }
-
-                                &:last-of-type {
-                                    border-radius: 0 0 6px 6px;
                                 }
                             }
                         }
