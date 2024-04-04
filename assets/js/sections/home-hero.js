@@ -1,6 +1,12 @@
 "use strict";
 
 $(document).ready(function () {
+  function calculateWidth(height) {
+    var aspectRatio = 16 / 9;
+    var width = aspectRatio * height;
+    return width;
+  }
+
   const slickSliderBreakpoint = window.screen.width > 1920;
   let variableWidthVal = false;
 
@@ -17,6 +23,7 @@ $(document).ready(function () {
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 7000,
+    variableWidth: variableWidthVal,
     responsive: [
       {
         breakpoint: 1024,
@@ -28,7 +35,8 @@ $(document).ready(function () {
   });
 
   if (slickSliderBreakpoint) {
-    $(".block-hero .slick-slide").width(1920);
+    const slideWidth = calculateWidth(window.screen.height - 125);
+    $(".block-hero .slick-slide").width(slideWidth);
   }
 
   $(".slide-img").click((e) => {
