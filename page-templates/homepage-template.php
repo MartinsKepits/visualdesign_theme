@@ -113,7 +113,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
     <?php endif; ?>
 
     <?php if ($homepage_collection_boxes_fields && $homepage_collection_boxes_fields['show_home_collection_boxes']) : ?>
-        <div class="block-collection-boxes container">
+        <div class="block-collection-boxes container-fluid">
             <?php if (
                 $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_link'] &&
                 $homepage_collection_boxes_fields['home_collection_page_one']['collection_page_img']

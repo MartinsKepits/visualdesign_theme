@@ -1,12 +1,14 @@
 .block-collection-boxes {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
 
     .collection-box {
         display: inline-block;
         position: relative;
         overflow: hidden;
+        max-width: 600px;
 
         .collection-box-img {
             width: 100%;
@@ -18,7 +20,7 @@
             position: absolute;
             top: 0;
             left: 0;
-            color: $white;
+            color: $main-one;
             font-size: 22px;
             font-weight: 700;
             line-height: 1;
@@ -58,7 +60,18 @@
     }
 }
 
-@media (max-width: 798px) {
+@media (max-width: 1200px) {
+    .block-collection-boxes {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        .collection-box {
+            max-width: unset;
+        }
+    }
+}
+
+@media (max-width: 576px) {
     .block-collection-boxes {
         display: flex;
         flex-direction: column;
