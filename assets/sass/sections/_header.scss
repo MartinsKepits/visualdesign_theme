@@ -136,7 +136,7 @@
                         color: $white;
                         padding: 0 10px;
                         transition: all 0.3s;
-                        cursor: pointer;
+                        /* cursor: pointer; temporary change */
                     }
 
                     .languages-options {
@@ -171,7 +171,8 @@
                 }
 
                 &:hover .languages-inner .languages-options {
-                    display: block;
+                    display: none; /* temporary change */
+                    // display: block;
                 }
             }
         }
@@ -256,6 +257,7 @@
                         }
 
                         a {
+                            display: none; /* temporary change */
                             text-decoration: none;
                             color: $gray-600;
                             font-size: 15px;
