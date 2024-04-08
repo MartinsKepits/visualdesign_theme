@@ -1,4 +1,8 @@
 .contact-page-wrapper {
+    .row {
+        min-height: calc(100vh - 75px);
+    }
+
     .contact-form-col {
         padding: 15px 25px 15px 50px;
         max-width: 700px;
@@ -15,7 +19,9 @@
         }
 
         .wpforms-field-label {
-            display: none;
+            color: $white;
+            margin-bottom: 8px;
+            margin-left: 2px;
         }
 
         .wpforms-field input,
@@ -36,20 +42,24 @@
     }
 }
 
-@media (min-width: 575px) {
-    .contact-img-col {
-        min-height: 719px;
+@media (min-width: 576px) {
+    .contact-page-wrapper .contact-form-col {
+        padding-top: 75px;
     }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 576px) {
     .contact-page-wrapper {
+        .row {
+            min-height: auto;
+        }
+
         .container-fluid {
             padding-right: 0;
         }
 
         .contact-form-col {
-            padding: 15px 12px;
+            padding: 15px 0 15px 12px;
         }
     }
 }
