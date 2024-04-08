@@ -1,20 +1,16 @@
 "use strict";
 
 $(document).ready(function () {
-    const windowWidth = window.innerWidth;
-    const isLargeScreen = windowWidth > 1919;
-    const variableWidthVal = isLargeScreen;
-
     $(".block-hero").slick({
         centerMode: true,
-        centerPadding: isLargeScreen ? "60px" : "30px",
+        centerPadding: "60px",
         slidesToShow: 1,
         arrows: true,
         dots: false,
         adaptiveHeight: true,
         autoplay: true,
         autoplaySpeed: 7000,
-        variableWidth: variableWidthVal,
+        variableWidth: true,
         responsive: [
             {
                 breakpoint: 1024,
@@ -25,14 +21,12 @@ $(document).ready(function () {
         ],
     });
 
-    if (isLargeScreen) {
-        $(".block-hero .slick-slide").width(
-            Math.min(
-                $(".block-hero .slick-slide img").width(),
-                windowWidth - 100
-            )
-        );
-    }
+    $(".block-hero .slick-slide").width(
+        Math.min(
+            $(".block-hero .slick-slide img").width(),
+            window.innerWidth - 100
+        )
+    );
 
     // View project functionality
     function toggleSlideViewProjectBtn() {
