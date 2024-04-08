@@ -24,8 +24,9 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $s_title = $homepage_hero_fields['home_hero_slide_one']['home_hero_link']['title'];
                 $s_link = $homepage_hero_fields['home_hero_slide_one']['home_hero_link']['url'];
             ?>
-                <div class="slide">
-                    <div class="slide-img" style="background: url(<?= $s_img; ?>) no-repeat center top/cover">
+                <div class="slide quick-slide">
+                    <div class="slide-img">
+                        <img src="<?= $s_img; ?>">
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
@@ -44,7 +45,8 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $s_link = $homepage_hero_fields['home_hero_slide_two']['home_hero_link']['url'];
             ?>
                 <div class="slide">
-                    <div class="slide-img" style="background: url(<?= $s_img; ?>) no-repeat center top/cover">
+                    <div class="slide-img">
+                        <img src="<?= $s_img; ?>">
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
@@ -63,7 +65,8 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $s_link = $homepage_hero_fields['home_hero_slide_three']['home_hero_link']['url'];
             ?>
                 <div class="slide">
-                    <div class="slide-img" style="background: url(<?= $s_img; ?>) no-repeat center top/cover">
+                    <div class="slide-img">
+                        <img src="<?= $s_img; ?>">
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
@@ -82,7 +85,8 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $s_link = $homepage_hero_fields['home_hero_slide_four']['home_hero_link']['url'];
             ?>
                 <div class="slide">
-                    <div class="slide-img" style="background: url(<?= $s_img; ?>) no-repeat center top/cover">
+                    <div class="slide-img">
+                        <img src="<?= $s_img; ?>">
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
@@ -101,7 +105,8 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 $s_link = $homepage_hero_fields['home_hero_slide_five']['home_hero_link']['url'];
             ?>
                 <div class="slide">
-                    <div class="slide-img" style="background: url(<?= $s_img; ?>) no-repeat center top/cover">
+                    <div class="slide-img">
+                        <img src="<?= $s_img; ?>">
                         <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                     </div>
                     <?php if ($s_title) : ?>
@@ -166,7 +171,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
         </div>
     <?php endif; ?>
 
-    <?php get_template_part( 'blocks/block', 'reviews' ); ?>
+    <?php get_template_part('blocks/block', 'reviews'); ?>
 </main>
 <!-- Main Content End -->
 

@@ -1,45 +1,51 @@
 "use strict";
 
 $(document).ready(function () {
-  function calculateWidth(height) {
-    var aspectRatio = 16 / 9;
-    var width = aspectRatio * height;
-    return width;
-  }
+    const windowWidth = window.innerWidth;
+    const isLargeScreen = windowWidth > 1919;
+    const variableWidthVal = isLargeScreen;
 
-  const slickSliderBreakpoint = window.screen.width > 1920;
-  let variableWidthVal = false;
+    $(".block-hero").slick({
+        centerMode: true,
+        centerPadding: isLargeScreen ? "60px" : "30px",
+        slidesToShow: 1,
+        arrows: true,
+        dots: false,
+        adaptiveHeight: true,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        variableWidth: variableWidthVal,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    centerPadding: "30px",
+                },
+            },
+        ],
+    });
 
-  if (slickSliderBreakpoint) {
-    variableWidthVal = true;
-  }
+    if (isLargeScreen) {
+        $(".block-hero .slick-slide").width(
+            Math.min(
+                $(".block-hero .slick-slide img").width(),
+                windowWidth - 100
+            )
+        );
+    }
 
-  $(".block-hero").slick({
-    centerMode: true,
-    centerPadding: "60px",
-    slidesToShow: 1,
-    arrows: true,
-    dots: false,
-    adaptiveHeight: true,
-    autoplay: true,
-    autoplaySpeed: 7000,
-    variableWidth: variableWidthVal,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          centerPadding: "30px",
-        },
-      },
-    ],
-  });
+    // View project functionality
+    function toggleSlideViewProjectBtn() {
+        $(this).children(".slide-view-btn").toggleClass("active");
+    }
 
-  if (slickSliderBreakpoint) {
-    const slideWidth = calculateWidth(window.screen.height - 125);
-    $(".block-hero .slick-slide").width(slideWidth);
-  }
+    $(".quick-slide .slide-img").click(toggleSlideViewProjectBtn);
+    $(".block-hero").on("afterChange", function (event, slick, currentSlide) {
+        $(".quick-slide .slide-img").off();
+        $(".slide-view-btn").removeClass("active");
+        $(".slick-slide").removeClass("quick-slide");
+        $(".slick-active").addClass("quick-slide");
 
-  $(".slide-img").click((e) => {
-    $(e.target).children(".slide-view-btn").toggleClass("active");
-  });
+        $(".quick-slide .slide-img").click(toggleSlideViewProjectBtn);
+    });
 });
