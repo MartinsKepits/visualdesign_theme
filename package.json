@@ -5,7 +5,7 @@
         "bootstrap": "^5.3.2",
         "i": "^0.3.7",
         "jquery": "^3.7.1",
-        "jquery-viewer": "^1.0.1",
+        "nanogallery2": "^3.0.5",
         "npm": "^10.4.0",
         "slick-carousel": "^1.8.1",
         "uglify-js": "^3.17.4",

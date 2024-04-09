@@ -34,21 +34,13 @@
 }
 
 // Gallery
-.project-images {
+.project-gallery {
     margin-top: 60px;
+}
 
-    .image {
-        position: relative;
-        overflow: hidden;
-
-        img {
-            width: 100%;
-        }
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
+.nGY2 .nGY2ViewerContent .nGY2ViewerAreaNext > i,
+.nGY2 .nGY2ViewerContent .nGY2ViewerAreaPrevious > i {
+    text-shadow: none;
 }
 
 @media (max-width: 575px) {

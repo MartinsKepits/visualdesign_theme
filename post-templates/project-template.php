@@ -45,66 +45,76 @@ $project_page_fields = get_field('project_page_fields');
         </div>
     </div>
     <div class="container">
-        <div id="project-images" class="project-images row g-3 animate__animated animate__fadeIn">
+        <div id="project-gallery" class="project-gallery row g-3 animate__animated animate__fadeIn">
             <?php if ($project_page_fields['project_img_one']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_one']['url']; ?>" alt="<?= $project_page_fields['project_img_one']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_one']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_one']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_two']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_two']['url']; ?>" alt="<?= $project_page_fields['project_img_two']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_two']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_two']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_three']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_three']['url']; ?>" alt="<?= $project_page_fields['project_img_three']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_three']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_three']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_four']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_four']['url']; ?>" alt="<?= $project_page_fields['project_img_four']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_four']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_four']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_five']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_five']['url']; ?>" alt="<?= $project_page_fields['project_img_five']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_five']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_five']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_six']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_six']['url']; ?>" alt="<?= $project_page_fields['project_img_six']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_six']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_six']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_seven']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_seven']['url']; ?>" alt="<?= $project_page_fields['project_img_seven']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_seven']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_seven']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eight']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eight']['url']; ?>" alt="<?= $project_page_fields['project_img_eight']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_eight']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_eight']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_nine']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_nine']['url']; ?>" alt="<?= $project_page_fields['project_img_nine']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_nine']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_nine']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_ten']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_ten']['url']; ?>" alt="<?= $project_page_fields['project_img_ten']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_ten']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_ten']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eleven']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eleven']['url']; ?>" alt="<?= $project_page_fields['project_img_eleven']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_eleven']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_eleven']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_twelve']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_twelve']['url']; ?>" alt="<?= $project_page_fields['project_img_twelve']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_twelve']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_twelve']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_thirteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_thirteen']['url']; ?>" alt="<?= $project_page_fields['project_img_thirteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_thirteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_thirteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_fourteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_fourteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fourteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_fourteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_fourteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_fifteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_fifteen']['url']; ?>" alt="<?= $project_page_fields['project_img_fifteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_fifteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_fifteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_sixteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_sixteen']['url']; ?>" alt="<?= $project_page_fields['project_img_sixteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_sixteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_sixteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_seventeen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_seventeen']['url']; ?>" alt="<?= $project_page_fields['project_img_seventeen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_seventeen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_seventeen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_eighteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_eighteen']['url']; ?>" alt="<?= $project_page_fields['project_img_eighteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_eighteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_eighteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_nineteen']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_nineteen']['url']; ?>" alt="<?= $project_page_fields['project_img_nineteen']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_nineteen']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_nineteen']['url']; ?>"></a>
             <?php endif; ?>
             <?php if ($project_page_fields['project_img_twenty']) : ?>
-                <div class="image col-xl-4 col-lg-4 col-md-6 col-sm-12 px-2"><img src="<?= $project_page_fields['project_img_twenty']['url']; ?>" alt="<?= $project_page_fields['project_img_twenty']['alt']; ?>"></div>
+                <a href="<?= $project_page_fields['project_img_twenty']['url']; ?>" data-ngthumb="<?= $project_page_fields['project_img_twenty']['url']; ?>"></a>
+            <?php endif; ?>
+
+            <?php if ($project_page_fields['project_video_one']) : ?>
+                <a href="<?= $project_page_fields['project_video_one'] ?>"></a>
+            <?php endif; ?>
+            <?php if ($project_page_fields['project_video_two']) : ?>
+                <a href="<?= $project_page_fields['project_video_two'] ?>"></a>
+            <?php endif; ?>
+            <?php if ($project_page_fields['project_video_three']) : ?>
+                <a href="<?= $project_page_fields['project_video_three'] ?>"></a>
             <?php endif; ?>
         </div>
     </div>
