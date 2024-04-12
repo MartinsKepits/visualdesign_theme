@@ -207,25 +207,3 @@
         display: block;
     }
 }
-
-// Pagination
-.pagination-wrapper {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    .pagination-button {
-        border: none;
-        outline: none;
-        border-radius: 100px;
-        width: 30px;
-        height: 30px;
-        margin: 0 2px;
-        font-weight: 700;
-
-        &.current-page {
-            background-color: $main-one;
-        }
-    }
-}
