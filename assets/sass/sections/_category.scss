@@ -54,7 +54,6 @@
         .tag-select {
             position: relative;
             display: inline-block;
-            min-width: 130px;
             color: $black;
 
             .tag-selected {
@@ -68,6 +67,7 @@
                 justify-content: space-between;
                 align-items: center;
                 user-select: none;
+                min-width: 130px;
 
                 i:before {
                     display: inline-block;
@@ -82,10 +82,11 @@
                 display: none;
                 position: absolute;
                 background-color: $white;
-                min-width: 100%;
                 z-index: 1;
                 border-radius: 6px;
                 margin-top: 5px;
+                width: 100%;
+                min-width: max-content;
 
                 .select-button {
                     padding: 8px 16px;
@@ -204,5 +205,27 @@
 
     &.show-no-projects-found {
         display: block;
+    }
+}
+
+// Pagination
+.pagination-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .pagination-button {
+        border: none;
+        outline: none;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        margin: 0 2px;
+        font-weight: 700;
+
+        &.current-page {
+            background-color: $main-one;
+        }
     }
 }
