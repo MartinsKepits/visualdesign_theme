@@ -27,7 +27,7 @@ $(document).ready(function () {
         paginationBtn,
     } = elements;
 
-    const postsPerPage = 20;
+    const postsPerPage = 5;
     const categoryId = $("#project-filters").data("category-id");
     let pageNumber = 1;
     let totalPosts = 0;
