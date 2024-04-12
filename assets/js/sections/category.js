@@ -194,7 +194,7 @@ $(document).ready(function () {
     // ORDER 3
     // Fetch total number of posts for the category...
     function fetchTotalPostsForCategory(tagId, searchVal) {
-        var apiUrl = "https://visualdesign.local/wp-json/wp/v2/posts";
+        var apiUrl = "https://visualdesign.lv/wp-json/wp/v2/posts";
         const params = new URLSearchParams();
 
         params.set("categories", categoryId);
@@ -219,7 +219,7 @@ $(document).ready(function () {
     // ORDER 5
     // Fetch Posts by Category and Tag / Title
     function fetchPostsByCategoryAndTagOrTitle(tagId, searchVal) {
-        var apiUrl = "https://visualdesign.local/wp-json/wp/v2/posts";
+        var apiUrl = "https://visualdesign.lv/wp-json/wp/v2/posts";
         const params = new URLSearchParams();
 
         params.append("categories", categoryId);
@@ -276,8 +276,7 @@ $(document).ready(function () {
     // ORDER 7
     // Fetch Post thumbnail image url
     function fetchFeaturedMedia(mediaId) {
-        var apiUrl =
-            "https://visualdesign.local/wp-json/wp/v2/media/" + mediaId;
+        var apiUrl = "https://visualdesign.lv/wp-json/wp/v2/media/" + mediaId;
 
         return fetch(apiUrl)
             .then((response) => response.json())
@@ -293,8 +292,7 @@ $(document).ready(function () {
         let promises = [];
 
         tagIds.forEach((tagId) => {
-            var apiUrl =
-                "https://visualdesign.local/wp-json/wp/v2/tags/" + tagId;
+            var apiUrl = "https://visualdesign.lv/wp-json/wp/v2/tags/" + tagId;
 
             let promise = fetch(apiUrl)
                 .then((response) => response.json())
