@@ -13,8 +13,10 @@ function visualdesign_theme()
     wp_enqueue_script('slick_carousel_js', get_template_directory_uri() . '/node_modules/slick-carousel/slick/slick.min.js');
 
     // nanogallery2
-    wp_enqueue_script('nanogallery2_js', get_template_directory_uri() . '/node_modules/nanogallery2/dist/jquery.nanogallery2.min.js');
-    wp_enqueue_style('nanogallery2_js_css', get_template_directory_uri() . '/node_modules/nanogallery2/dist/css/nanogallery2.min.css');
+    // wp_enqueue_script('nanogallery2_js', get_template_directory_uri() . '/node_modules/nanogallery2/dist/jquery.nanogallery2.min.js');
+    // wp_enqueue_style('nanogallery2_js_css', get_template_directory_uri() . '/node_modules/nanogallery2/dist/css/nanogallery2.min.css');
+    wp_enqueue_script('nanogallery2_js', get_template_directory_uri() .  '/assets/js/vendor/nanogallery2/dist/jquery.nanogallery2.min.js');
+    wp_enqueue_style('nanogallery2_js_css', get_template_directory_uri() . '/assets/js/vendor/nanogallery2/dist/css/nanogallery2.min.css');
 
     // Animate.css
     wp_enqueue_style('animatecss_css', get_template_directory_uri() . '/node_modules/animate.css/animate.min.css');
