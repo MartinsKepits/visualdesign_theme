@@ -21,7 +21,7 @@ $(document).ready(function () {
         $(".collection-box").each(function () {
             var $this = $(this);
             if (isInViewport($this)) {
-                $this.addClass("animate__animated animate__fadeInUp");
+                $this.addClass("animate__animated animate__fadeIn");
             }
         });
     }
