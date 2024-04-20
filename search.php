@@ -94,30 +94,30 @@ $category = get_queried_object();
                             </div>
                         <?php endif; ?>
                     </a>
-                <?php endwhile;
-            else : ?>
-                  <div class="no-projects-found-text">
-                    <span><?= pll__('No Projects Found.'); ?></span>
-                </div>
-            <?php endif; ?>
-        </div>
+                <?php endwhile; ?>
 
-        <div class="pagination-wrapper">
-            <?php
-            // Display pagination if more than one page exists
-            $total_pages = $posts_query->max_num_pages;
-            if ($total_pages > 1) : ?>
-                <div class="pagination">
+                <div class="pagination-wrapper">
                     <?php
-                    echo paginate_links(array(
-                        'base' => add_query_arg('paged', '%#%'),
-                        'format' => '?paged=%#%',
-                        'current' => max(1, $paged),
-                        'total' => $total_pages,
-                        'prev_text' => '<i class="fa-solid fa-angles-left"></i>',
-                        'next_text' => '<i class="fa-solid fa-angles-right"></i>',
-                    ));
-                    ?>
+                    // Display pagination if more than one page exists
+                    $total_pages = $posts_query->max_num_pages;
+                    if ($total_pages > 1) : ?>
+                        <div class="pagination">
+                            <?php
+                            echo paginate_links(array(
+                                'base' => add_query_arg('paged', '%#%'),
+                                'format' => '?paged=%#%',
+                                'current' => max(1, $paged),
+                                'total' => $total_pages,
+                                'prev_text' => '<i class="fa-solid fa-angles-left"></i>',
+                                'next_text' => '<i class="fa-solid fa-angles-right"></i>',
+                            ));
+                            ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            <?php else : ?>
+                <div class="no-projects-found-text">
+                    <span><?= pll__('No Projects Found.'); ?></span>
                 </div>
             <?php endif; ?>
         </div>
