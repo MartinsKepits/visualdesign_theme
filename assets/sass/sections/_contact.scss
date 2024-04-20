@@ -42,6 +42,18 @@
     }
 }
 
+@media (max-width: 991px) {
+    .contact-page-wrapper {
+        .contact-img-col {
+            display: none;
+        }
+
+        .contact-form-col {
+            max-width: unset;
+        }
+    }
+}
+
 @media (min-width: 576px) {
     .contact-page-wrapper .contact-form-col {
         padding-top: 75px;
