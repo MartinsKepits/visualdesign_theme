@@ -73,7 +73,7 @@
                     <p>© <?= date('Y'); ?> <?= pll__('Visual Design. All Rights Reserved.'); ?></p>
                 </div>
                 <div class="col-sm col-created-by">
-                    <a href="https://martinskepits.lv/" target="_blank"><?= pll__('Built by'); ?> <span>Mārtiņš Ķepīts</span></a>
+                    <a href="https://martinskepits.lv/" target="_blank"><?= pll__('Built by'); ?> <img src="<?= get_template_directory_uri(); ?>/assets/images/martinskepitslv-logo.svg" alt="Martins Kepits Logo" /></a>
                 </div>
             </div>
         </div>

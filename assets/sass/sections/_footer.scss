@@ -97,7 +97,15 @@
                     font-weight: 700;
                 }
 
+                img {
+                    max-width: 50px;
+                }
+
                 &:hover span {
+                    color: $main-one;
+                }
+
+                &:hover {
                     color: $main-one;
                 }
             }
