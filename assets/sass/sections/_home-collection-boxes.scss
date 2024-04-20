@@ -9,6 +9,7 @@
         position: relative;
         overflow: hidden;
         max-width: 600px;
+        z-index: -1;
 
         .collection-box-img {
             width: 100%;
