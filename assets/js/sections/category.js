@@ -7,10 +7,12 @@ $(document).ready(function () {
     const tagSelectedText = ".tag-selected-text";
     const selectButton = ".select-button";
     const projectSearch = "#project-search";
-    const project = ".project";
-    const noProjectsFoundText = ".no-projects-found-text";
+    let typingTimer;
+    const typingInterval = 1000;
 
-    $(tagSelected).width($(selectOptions).width());
+    if ($(window).width() > 576) {
+        $(tagSelected).width($(selectOptions).width());
+    }
 
     $(tagSelected).on("click", function () {
         $(tagSelect).toggleClass("select-active");
@@ -19,11 +21,9 @@ $(document).ready(function () {
 
     $(selectButton).click(function () {
         $(tagSelectedText).text($(this).text());
-        $(tagSelect).removeClass("select-active");
         $(selectOptions).hide();
-        $(noProjectsFoundText).removeClass("show-no-projects-found");
-        $(projectSearch).val("");
-        $(project).hide().filter($(this).attr("data-filter")).show();
+        $("#tag-filter").val($(this).data("value"));
+        $("#tag-filter-form").submit();
     });
 
     $(document).on("click", function (e) {
@@ -36,24 +36,17 @@ $(document).ready(function () {
         }
     });
 
-    $(projectSearch).on("input", (el) => {
-        $(tagSelectedText).text($('.select-button[data-filter*="*"]').text());
-        $(project).removeClass("show-project");
-        $(noProjectsFoundText).removeClass("show-no-projects-found");
-
-        $(project)
-            .hide()
-            .filter(function () {
-                let projectText = $(this).text().toLowerCase();
-                return (
-                    projectText.indexOf($(el.target).val().toLowerCase()) > -1
-                );
-            })
-            .show()
-            .addClass("show-project");
-
-        if ($(".project.show-project").length < 1) {
-            $(noProjectsFoundText).addClass("show-no-projects-found");
+    $(projectSearch).on("input", function () {
+        var inputValue = $(this).val().trim();
+        clearTimeout(typingTimer);
+        if (inputValue !== "") {
+            typingTimer = setTimeout(function () {
+                $("#search-form").submit();
+            }, typingInterval);
         }
+    });
+
+    $(projectSearch).on("keydown", function () {
+        clearTimeout(typingTimer);
     });
 });

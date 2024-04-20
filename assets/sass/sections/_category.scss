@@ -2,6 +2,14 @@
     margin-top: 30px;
 }
 
+.category-title {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid $grey-main;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
 // Filters
 .project-filters {
     display: flex;
@@ -68,6 +76,7 @@
                 align-items: center;
                 user-select: none;
                 min-width: 130px;
+                text-transform: capitalize;
 
                 i:before {
                     display: inline-block;
@@ -91,6 +100,7 @@
                 .select-button {
                     padding: 8px 16px;
                     font-weight: 500;
+                    text-transform: capitalize;
                     cursor: pointer;
                     user-select: none;
 
@@ -178,6 +188,7 @@
             color: $black;
             padding: 2px 8px;
             border-radius: 100px;
+            text-transform: capitalize;
         }
     }
 
@@ -198,12 +209,55 @@
 
 // No projects found
 .no-projects-found-text {
-    display: none;
+    display: block;
     font-size: 18px;
     font-weight: 700;
     text-align: center;
+}
 
-    &.show-no-projects-found {
-        display: block;
+// Pagination
+.pagination-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .page-numbers {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        width: 30px;
+        height: 30px;
+        margin: 0 2px;
+        font-weight: 700;
+        text-decoration: none;
+        background-color: $white;
+        color: $black;
+        padding-left: 2px;
+
+        &.current {
+            background-color: $main-one;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    .project-filters {
+        flex-direction: column;
+
+        .search-form,
+        .tag-filter-form {
+            width: 100%;
+        }
+
+        .search-filter-wrapper .search-filter {
+            max-width: unset;
+        }
+
+        .tag-filters .tag-select {
+            display: block;
+            width: 100%;
+        }
     }
 }

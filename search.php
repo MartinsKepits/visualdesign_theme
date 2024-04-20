@@ -1,28 +1,28 @@
-<?php
-get_header();
+<?php get_header();
 $category = get_queried_object();
 ?>
 
+<!-- Main Content Start -->
 <main role="main">
     <div class="projects-wrapper container animate__animated animate__fadeIn">
-        <h1 class="category-title container"><?= single_cat_title('', true) ?></h1>
+        <h1 class="category-title container"><?= pll__("Projects"); ?></h1>
 
         <div id="project-filters" class="project-filters container">
             <form role="search" method="get" id="search-form" class="search-form" action="<?php echo esc_url(home_url('/')); ?>">
                 <div class="search-filter-wrapper">
                     <div class="search-filter">
-                        <input type="text" id="project-search" class="project-search" placeholder="Search all..." value="" name="s" autocomplete="off" />
+                        <input type="text" id="project-search" class="project-search" placeholder="Search all..." value="<?= isset($_GET['s']) && $_GET['s'] !== "" ? $_GET['s'] : ""; ?>" name="s" autocomplete="off" />
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </div>
                 </div>
             </form>
 
-            <form id="tag-filter-form" class="tag-filter-form" action="<?= get_category_link($category->term_id) ?>" method="get">
+            <form id="tag-filter-form" class="tag-filter-form" action="<?= get_category_link(1) ?>" method="get">
                 <input id="tag-filter" name="tag-filter" type="hidden">
                 <div class="tag-filters">
                     <div class="tag-select">
                         <div class="tag-selected">
-                            <span class="tag-selected-text"><?= isset($_GET['tag-filter']) && $_GET['tag-filter'] !== "" ? $_GET['tag-filter'] : pll__('All tags'); ?></span>
+                            <span class="tag-selected-text"><?= pll__('All tags'); ?></span>
                             <i></i>
                         </div>
                         <div class="select-options">
@@ -46,20 +46,15 @@ $category = get_queried_object();
         </div>
 
         <?php
+        $s = get_search_query();
         $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 
         $args = array(
+            's' => $s,
             'post_type' => 'post',
             'posts_per_page' => get_option('posts_per_page'),
             'paged' => $paged,
-            'cat' => $category->term_id
         );
-
-        // If tag filter is set, include it in query args
-        if (isset($_GET['tag-filter'])) {
-            $selected_tag = $_GET['tag-filter'];
-            $args['tag'] = $selected_tag === 'all' ? '' : $selected_tag;
-        }
 
         $posts_query = new WP_Query($args);
         ?>
@@ -68,9 +63,18 @@ $category = get_queried_object();
             <?php if ($posts_query->have_posts()) : ?>
                 <?php while ($posts_query->have_posts()) : $posts_query->the_post();
                     $tags = get_the_tags();
+                    $tag_classes = '';
+
+                    // Generate tag classes
+                    if ($tags) {
+                        foreach ($tags as $tag) {
+                            $tag_classes .= $tag->name . ' ';
+                        }
+                    }
+
                     $project_item_image_url = get_the_post_thumbnail_url();
                 ?>
-                    <a class="project col-xl-4 col-lg-4 col-md-6 col-sm-12" href="<?php the_permalink(); ?>">
+                    <a class="project col-xl-4 col-lg-4 col-md-6 col-sm-12 <?= $tag_classes; ?>" href="<?php the_permalink(); ?>">
                         <?php if ($project_item_image_url) : ?>
                             <div class="project-img-wrapper">
                                 <img class="project-img" src="<?= $project_item_image_url; ?>" />
@@ -91,14 +95,18 @@ $category = get_queried_object();
                         <?php endif; ?>
                     </a>
                 <?php endwhile;
-                wp_reset_postdata(); ?>
+            else : ?>
+                  <div class="no-projects-found-text">
+                    <span><?= pll__('No Projects Found.'); ?></span>
+                </div>
+            <?php endif; ?>
         </div>
 
         <div class="pagination-wrapper">
             <?php
-                $total_pages = $posts_query->max_num_pages;
-                if ($total_pages > 1) :
-            ?>
+            // Display pagination if more than one page exists
+            $total_pages = $posts_query->max_num_pages;
+            if ($total_pages > 1) : ?>
                 <div class="pagination">
                     <?php
                     echo paginate_links(array(
@@ -112,9 +120,10 @@ $category = get_queried_object();
                     ?>
                 </div>
             <?php endif; ?>
-        <?php endif; ?>
         </div>
+
     </div>
 </main>
+<!-- Main Content End -->
 
 <?php get_footer(); ?>
