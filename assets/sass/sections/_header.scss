@@ -43,10 +43,10 @@
 
                 .menu-item {
                     a {
-                        padding: 9px 20px;
+                        padding: 13px 20px 11px 20px;
                         color: $white;
+                        font-family: "Helvetica";
                         font-size: 15px;
-                        font-weight: 700;
                         text-decoration: none;
                         user-select: none;
                         text-transform: uppercase;
@@ -79,7 +79,7 @@
                             position: absolute;
                             list-style: none;
                             background: $white;
-                            top: 34px;
+                            top: 36px;
                             border-top: 3px solid $main-one;
                             padding: 9px 0;
                             min-width: 150px;
@@ -121,6 +121,7 @@
             .menu-languages {
                 position: relative;
                 margin-left: 10px;
+                margin-top: 2px;
                 height: 100%;
 
                 .languages-inner {
@@ -130,7 +131,7 @@
                     .language-active {
                         display: block;
                         height: 100%;
-                        font-weight: 700;
+                        font-family: "Helvetica";
                         font-size: 15px;
                         text-transform: uppercase;
                         color: $white;
@@ -155,9 +156,9 @@
                                 color: $black;
                                 padding: 12px;
                                 transition: 0.3s;
+                                font-family: "Helvetica";
                                 font-size: 15px;
                                 text-decoration: none;
-                                font-weight: 700;
                                 text-transform: uppercase;
                                 transition: all 0.3s;
                                 border-radius: 6px;
@@ -251,8 +252,8 @@
                         gap: 10px;
 
                         .current-lang {
+                            font-family: "Helvetica";
                             font-size: 15px;
-                            font-weight: 700;
                             user-select: none;
                         }
 
@@ -260,8 +261,8 @@
                             display: none; /* temporary change */
                             text-decoration: none;
                             color: $gray-600;
+                            font-family: "Helvetica";
                             font-size: 15px;
-                            font-weight: 700;
                             user-select: none;
                             transition: all 0.3s;
 
@@ -316,8 +317,8 @@
                             display: block;
                             padding: 13px 20px;
                             color: $white;
+                            font-family: "Helvetica";
                             font-size: 15px;
-                            font-weight: 700;
                             text-transform: uppercase;
                             text-decoration: none;
                             user-select: none;

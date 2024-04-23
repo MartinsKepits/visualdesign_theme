@@ -10,12 +10,22 @@ html {
 body {
     color: $white;
     background-color: $main-two;
-    font-family: "Nunito", "Ubuntu", sans-serif;
-    letter-spacing: 2.5px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 2px !important;
 
     main {
         padding-bottom: 60px;
         min-height: calc(80vh - 75px);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Helvetica";
+        font-weight: 900;
     }
 
     h1 {
