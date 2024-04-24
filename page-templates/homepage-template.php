@@ -29,7 +29,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
             ?>
                     <div class="slide<?= $i === 1 ? ' quick-slide' : ''; ?>">
                         <div class="slide-img">
-                            <img src="<?= $s_img; ?>" alt="<?= $s_title; ?>">
+                            <img src="<?= $s_img; ?>" alt="<?= pll__('Image of') ?> <?= strtolower($s_title); ?> <?= pll__('project') ?>">
                             <a href="<?= $s_link; ?>" class="slide-view-btn"><?= pll__('View Project'); ?></a>
                         </div>
                         <div class="slide-title"><a href="<?= $s_link; ?>"><?= $s_title; ?></a></div>
@@ -53,7 +53,7 @@ $homepage_collection_boxes_fields = get_field('homepage_collection_boxes_fields'
                 ) :
             ?>
                     <a class="collection-box" href="<?= $collection_box['collection_page_link']['url']; ?>">
-                        <img class="collection-box-img" src="<?= $collection_box['collection_page_img']['url']; ?>" alt="<?= $collection_box['collection_page_link']['title']; ?>"/>
+                        <img class="collection-box-img" src="<?= $collection_box['collection_page_img']['url']; ?>" alt="<?= pll__('Image of') ?> <?= strtolower($collection_box['collection_page_link']['title']); ?> <?= pll__('category') ?>"/>
                         <h2 class="collection-box-title"><?= $collection_box['collection_page_link']['title']; ?></h2>
                     </a>
             <?php
