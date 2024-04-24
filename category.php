@@ -73,7 +73,7 @@ $posts_query = new WP_Query($args);
                     <a class="project col-xl-4 col-lg-4 col-md-6 col-sm-12" href="<?php the_permalink(); ?>">
                         <?php if ($project_item_image_url) : ?>
                             <div class="project-img-wrapper">
-                                <img class="project-img" src="<?= $project_item_image_url; ?>" />
+                                <img class="project-img" src="<?= $project_item_image_url; ?>" alt="<?= the_title(); ?>" />
                                 <div class="project-img-bg">
                                     <span><?= pll__('View Project'); ?></span>
                                 </div>

@@ -8,71 +8,27 @@ $block_reviews_fields = get_field('block_reviews_fields');
             <div class="block-reviews-title"><?= pll__('Client Reviews'); ?></div>
         </div>
         <div id="block-reviews-items" class="block-reviews-items container">
-            <?php if (
-                $block_reviews_fields['review_one_fields']['review_name'] &&
-                $block_reviews_fields['review_one_fields']['review_company'] &&
-                $block_reviews_fields['review_one_fields']['review_desc']
-            ) : ?>
-                <div class="review-wrapper">
-                    <p class="review-desc"><?= $block_reviews_fields['review_one_fields']['review_desc']; ?></p>
-                    <div class="review-info">
-                        <span class="review-title"><?= $block_reviews_fields['review_one_fields']['review_name']; ?></span>
-                        <span class="review-company"><?= $block_reviews_fields['review_one_fields']['review_company']; ?></span>
+            <?php
+            for ($i = 1; $i <= 5; $i++) :
+                $review_fields = $block_reviews_fields['review_' . numberToText($i) . '_fields'];
+
+                if (
+                    $review_fields['review_name'] &&
+                    $review_fields['review_company'] &&
+                    $review_fields['review_desc']
+                ) :
+            ?>
+                    <div class="review-wrapper">
+                        <p class="review-desc"><?= $review_fields['review_desc']; ?></p>
+                        <div class="review-info">
+                            <span class="review-title"><?= $review_fields['review_name']; ?></span>
+                            <span class="review-company"><?= $review_fields['review_company']; ?></span>
+                        </div>
                     </div>
-                </div>
-            <?php endif; ?>
-            <?php if (
-                $block_reviews_fields['review_two_fields']['review_name'] &&
-                $block_reviews_fields['review_two_fields']['review_company'] &&
-                $block_reviews_fields['review_two_fields']['review_desc']
-            ) : ?>
-                <div class="review-wrapper">
-                    <p class="review-desc"><?= $block_reviews_fields['review_two_fields']['review_desc']; ?></p>
-                    <div class="review-info">
-                        <span class="review-title"><?= $block_reviews_fields['review_two_fields']['review_name']; ?></span>
-                        <span class="review-company"><?= $block_reviews_fields['review_two_fields']['review_company']; ?></span>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <?php if (
-                $block_reviews_fields['review_three_fields']['review_name'] &&
-                $block_reviews_fields['review_three_fields']['review_company'] &&
-                $block_reviews_fields['review_three_fields']['review_desc']
-            ) : ?>
-                <div class="review-wrapper">
-                    <p class="review-desc"><?= $block_reviews_fields['review_three_fields']['review_desc']; ?></p>
-                    <div class="review-info">
-                        <span class="review-title"><?= $block_reviews_fields['review_three_fields']['review_name']; ?></span>
-                        <span class="review-company"><?= $block_reviews_fields['review_three_fields']['review_company']; ?></span>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <?php if (
-                $block_reviews_fields['review_four_fields']['review_name'] &&
-                $block_reviews_fields['review_four_fields']['review_company'] &&
-                $block_reviews_fields['review_four_fields']['review_desc']
-            ) : ?>
-                <div class="review-wrapper">
-                    <p class="review-desc"><?= $block_reviews_fields['review_four_fields']['review_desc']; ?></p>
-                    <div class="review-info">
-                        <span class="review-title"><?= $block_reviews_fields['review_four_fields']['review_name']; ?></span>
-                        <span class="review-company"><?= $block_reviews_fields['review_four_fields']['review_company']; ?></span>
-                    </div>
-                </div>
-            <?php endif; ?>
-            <?php if (
-                $block_reviews_fields['review_five_fields']['review_name'] &&
-                $block_reviews_fields['review_five_fields']['review_company'] &&
-                $block_reviews_fields['review_five_fields']['review_desc']
-            ) : ?>
-                <div class="review-wrapper">
-                    <p class="review-desc"><?= $block_reviews_fields['review_five_fields']['review_desc']; ?></p>
-                    <div class="review-info">
-                        <span class="review-title"><?= $block_reviews_fields['review_five_fields']['review_name']; ?></span>
-                        <span class="review-company"><?= $block_reviews_fields['review_five_fields']['review_company']; ?></span>
-                    </div>
-                </div>
-            <?php endif; ?>
+            <?php
+                endif;
+            endfor;
+            ?>
         </div>
     </div>
 <?php endif; ?>
