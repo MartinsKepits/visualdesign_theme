@@ -34,11 +34,29 @@
         }
 
         .contact-submit {
-            font-family: "Helvetica";
-            font-weight: 900;
-            font-size: 18px;
+            font-weight: 700;
+            font-size: 16px;
             letter-spacing: 2px;
-            padding-top: 2px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+
+            &::after {
+                display: inline-block;
+                font-family: "Font Awesome 5 Free", sans-serif;
+                content: "\f061";
+                font-size: 22px;
+                font-weight: 700;
+                margin-top: 3px;
+                margin-left: 10px;
+                height: 18px;
+                color: $main-two;
+            }
+
+            &:hover {
+                background: $main-one;
+            }
         }
     }
 }
