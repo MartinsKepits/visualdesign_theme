@@ -5,12 +5,13 @@
 
     .partners-title {
         font-family: "Helvetica";
+        font-size: 15px;
+        font-weight: 400;
         text-transform: uppercase;
         color: $white;
         border-bottom: 2px solid $grey-main;
         padding-bottom: 15px;
         margin-bottom: 0;
-        color: $main-one;
     }
 
     .partners-slider {
@@ -82,8 +83,6 @@
         align-items: center;
         justify-content: center;
         text-transform: capitalize;
-        background-color: $grey-main;
-        border-bottom: 2px solid $grey-main;
 
         .partner-title {
             font-size: 24px;
@@ -98,5 +97,11 @@
                 text-decoration: underline;
             }
         }
+    }
+}
+
+@media (min-width: 2000px) {
+    .partners-wrapper {
+        max-width: 1920px;
     }
 }

@@ -4,7 +4,7 @@ $(document).ready(function () {
     const $partnersSlider = $("#partners-slider");
 
     $partnersSlider.slick({
-        slidesToShow: 4,
+        slidesToShow: 5,
         slidesToScroll: 1,
         autoplay: true,
         infinite: true,
@@ -13,6 +13,12 @@ $(document).ready(function () {
         dots: false,
         cssEase: "linear",
         responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 4,
+                },
+            },
             {
                 breakpoint: 1400,
                 settings: {
