@@ -14,4 +14,6 @@ add_action('init', function () {
     pll_register_string('image_of', 'Image of');
     pll_register_string('project', 'project');
     pll_register_string('all_tags', 'All tags');
+    pll_register_string('page_404_title', "Sorry, this page isn't available.");
+    pll_register_string('page_404_desc', "Looks like this page have been removed. But you can view my projects in the categories below.");
 });

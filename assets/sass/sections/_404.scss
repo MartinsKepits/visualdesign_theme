@@ -1,0 +1,39 @@
+.page-404-wrapper {
+    min-height: calc(100vh - 75px);
+    text-align: center;
+}
+
+.page-404-title {
+    margin-bottom: 15px;
+}
+
+.page-404-desc {
+    margin: 0;
+    max-width: 600px;
+    font-size: 15px;
+}
+
+.page-404-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 45px;
+
+    a {
+        padding: 13px 20px 11px 20px;
+        color: $main-one;
+        font-family: "Helvetica";
+        font-size: 15px;
+        text-decoration: none;
+        user-select: none;
+        text-transform: uppercase;
+
+        &:hover {
+            background: $main-one;
+            color: $black;
+            border-radius: 100px;
+        }
+    }
+}
