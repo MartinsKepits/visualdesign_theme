@@ -69,3 +69,11 @@ function numberToText($number)
         return $numberText[$number];
     }
 }
+
+// Redirect tag pages to homepage
+add_action( 'template_redirect', function() {
+    if ( is_tag() ) {
+        wp_redirect( '/' );
+        exit;
+    }
+} );
